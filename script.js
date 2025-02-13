@@ -41,13 +41,14 @@ function resizeYesButton() {
 }
 
 function generateMessage(noCount) {
+  const name = window.prompt("What's your name?");
   const messages = [
     "No",
-    "Are you sure?",
+    "Are you sure "+ name +"?",
     "Pookie please",
-    "Don't do this to me :(",
-    "You're breaking my heart",
-    "I'm gonna cry...",
+    "Don't do this to me"+ name +":(",
+    "You're breaking my heart"+ name,
+    "I'm gonna cry..."+ name +"plz",
   ];
 
   const messageIndex = Math.min(noCount, messages.length - 1);
